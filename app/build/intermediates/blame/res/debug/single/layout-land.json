@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/layout-land/barcode_capture.xml",
+        "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/src/main/res/layout-land/barcode_capture.xml"
+    },
+    {
+        "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/layout-land/activity_main.xml",
+        "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/src/main/res/layout-land/activity_main.xml"
+    }
+]
