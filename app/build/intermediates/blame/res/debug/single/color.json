@@ -16,12 +16,12 @@
         "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/color/abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
-        "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/color/common_google_signin_btn_text_light.xml"
-    },
-    {
         "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
         "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/color/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",

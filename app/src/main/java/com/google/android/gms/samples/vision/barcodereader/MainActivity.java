@@ -17,6 +17,7 @@
 package com.google.android.gms.samples.vision.barcodereader;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -29,7 +30,6 @@ import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
 
 import java.io.IOException;
-import java.util.Objects;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -44,7 +44,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private static final int RC_BARCODE_CAPTURE = 9001;
     private static final String TAG = "BarcodeMain";
-    private String barcodeApi = "https://productcontentapigw.trendyol.com/productcontents/2194808";
     private static String response2;
     public String barcodeString;
 
@@ -64,7 +63,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private void getContent(final String barcodeNumber) throws IOException {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://stageproductcontentapigw.trendyol.com/")
+                .baseUrl("https://easybarcode.trendyol.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -73,14 +72,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
         contentCall.enqueue(new Callback<Content>() {
             @Override
             public void onResponse(Call<Content> call, retrofit2.Response<Content> response) {
-                response2 = response.body() != null ? response.body().getId().toString() : null;
-                if(response2 != null ){
+                response2 = response.body() != null ? response.body().getContentId().toString() : null;
+                if (response2 != null && !response2.equals("0")) {
                     directToTrendyol();
+                } else {
+                    Intent intent = new Intent(MainActivity.this, NoResultActivity.class);
+                    startActivity(intent);
 
-                }
-                else {
-                    barcodeValue.setText("Aradiginiz urunu maalesef bulamadık :( ");
 
+                    barcodeValue.setText("Aradiginiz urunu maalesef bulamadik :( ");
                 }
             }
 
@@ -103,7 +103,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         if (v.getId() == R.id.read_barcode) {
             Intent intent = new Intent(this, BarcodeCaptureActivity.class);
-            //intent.putExtra(BarcodeCaptureActivity.AutoFocus, autoFocus.isChecked());
             intent.putExtra(BarcodeCaptureActivity.UseFlash, useFlash.isChecked());
             intent.putExtra(BarcodeCaptureActivity.UseFlash, useFlash.isChecked());
 
@@ -120,7 +119,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     barcodeString = barcode.displayValue;
                     barcodeValue.setText(barcodeString);
                     try {
-                        getContent("3031389");
+                        getContent(barcodeString);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

@@ -4,16 +4,14 @@ import com.google.gson.annotations.SerializedName;
 
 public class Content {
 
-    @SerializedName("id")
-    private Integer id;
+    @SerializedName("contentId")
+    private Integer contentId;
 
-    public Integer getId() {
-        return id;
+    public Integer getContentId() {
+        return contentId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setContentId(Integer contentId) {
+        this.contentId = contentId;
     }
-
-
 }

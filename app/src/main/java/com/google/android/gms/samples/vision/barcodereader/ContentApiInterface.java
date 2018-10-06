@@ -6,6 +6,6 @@ import retrofit2.http.Path;
 
 public interface ContentApiInterface {
 
-    @GET("productcontents/{barcode}")
+    @GET("barcode/{barcode}")
     Call<Content> getProductContentId(@Path("barcode") String barcode);
 }
