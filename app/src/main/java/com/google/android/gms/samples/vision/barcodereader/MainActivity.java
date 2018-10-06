@@ -40,7 +40,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends Activity implements View.OnClickListener {
 
     private CompoundButton useFlash;
-    private TextView barcodeValue;
 
     private static final int RC_BARCODE_CAPTURE = 9001;
     private static final String TAG = "BarcodeMain";
@@ -53,7 +52,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        barcodeValue = (TextView) findViewById(R.id.barcode_value);
 
         useFlash = (CompoundButton) findViewById(R.id.use_flash);
 
@@ -78,9 +76,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 } else {
                     Intent intent = new Intent(MainActivity.this, NoResultActivity.class);
                     startActivity(intent);
-
-
-                    barcodeValue.setText("Aradiginiz urunu maalesef bulamadik :( ");
                 }
             }
 
@@ -117,7 +112,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 if (data != null) {
                     Barcode barcode = data.getParcelableExtra(BarcodeCaptureActivity.BarcodeObject);
                     barcodeString = barcode.displayValue;
-                    barcodeValue.setText(barcodeString);
                     try {
                         getContent(barcodeString);
                     } catch (IOException e) {

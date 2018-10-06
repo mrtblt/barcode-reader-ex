@@ -20,12 +20,12 @@
         "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/layout/design_navigation_item.xml"
     },
     {
-        "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_big_media_narrow.xml"
-    },
-    {
         "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
         "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
@@ -34,10 +34,6 @@
     {
         "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
         "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_media_cancel_action.xml"
-    },
-    {
-        "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/layout/activity_no_result.xml",
-        "source": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/src/main/res/layout/activity_no_result.xml"
     },
     {
         "merged": "/Users/mert.bulut/Downloads/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",

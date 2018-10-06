@@ -3320,7 +3320,7 @@ containing a value of this type.
         public static final int all=0x7f0b0040;
         public static final int always=0x7f0b0046;
         public static final int auto=0x7f0b0035;
-        public static final int barcode_value=0x7f0b0081;
+        public static final int barcode_value=0x7f0b0083;
         public static final int barrier=0x7f0b0019;
         public static final int beginning=0x7f0b0042;
         public static final int bottom=0x7f0b000b;
@@ -3397,7 +3397,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f0b0006;
         public static final int progress_horizontal=0x7f0b0007;
         public static final int radio=0x7f0b006b;
-        public static final int read_barcode=0x7f0b0082;
+        public static final int read_barcode=0x7f0b0081;
         public static final int right=0x7f0b000e;
         public static final int screen=0x7f0b0030;
         public static final int scroll=0x7f0b002c;
@@ -3450,7 +3450,7 @@ containing a value of this type.
         public static final int touch_outside=0x7f0b0088;
         public static final int up=0x7f0b0009;
         public static final int useLogo=0x7f0b0028;
-        public static final int use_flash=0x7f0b0083;
+        public static final int use_flash=0x7f0b0082;
         public static final int view_offset_helper=0x7f0b000a;
         public static final int wide=0x7f0b004c;
         public static final int withText=0x7f0b004a;
